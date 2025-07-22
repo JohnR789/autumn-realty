@@ -1,3 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Custom luxury palette */
+:root {
+  --autumn-gold: #d6a259;
+  --autumn-dark: #35220e;
+  --autumn-brown: #7b512a;
+  --autumn-cream: #f9f5ee;
+}
+
+/* Tailwind custom classes */
+.text-autumn-gold {
+  color: var(--autumn-gold) !important;
+}
+.bg-autumn-gold {
+  background-color: var(--autumn-gold) !important;
+}
+.text-autumn-dark {
+  color: var(--autumn-dark) !important;
+}
+.bg-autumn-dark {
+  background-color: var(--autumn-dark) !important;
+}
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+.font-sans {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar shadow and blur for luxury look */
+header {
+  box-shadow: 0 6px 32px rgba(140, 95, 38, 0.09);
+  backdrop-filter: blur(6px);
+}
+

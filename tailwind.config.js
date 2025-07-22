@@ -1,20 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html",
   ],
   theme: {
     extend: {
       colors: {
-        autumn: "var(--autumn)",
-        "autumn-dark": "var(--autumn-dark)",
-        "autumn-light": "var(--autumn-light)",
+        "autumn-gold": "#d6a259",
+        "autumn-dark": "#35220e",
+        "autumn-brown": "#7b512a",
+        "autumn-cream": "#f9f5ee",
       },
       fontFamily: {
-        sans: ["Inter", "Segoe UI", "Arial", "sans-serif"],
+        serif: ['Playfair Display', 'serif'],
+        sans: ['Montserrat', 'sans-serif'],
       },
     },
   },
   plugins: [],
 };
+
