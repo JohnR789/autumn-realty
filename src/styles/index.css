@@ -1,0 +1,28 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+/* Custom color palette for Autumn Realty */
+:root {
+  --autumn: #b8611c;
+  --autumn-dark: #44321a;
+  --autumn-light: #f7efe7;
+}
+
+.bg-autumn { background-color: var(--autumn); }
+.bg-autumn-dark { background-color: var(--autumn-dark); }
+.bg-autumn-light { background-color: var(--autumn-light); }
+
+.text-autumn { color: var(--autumn); }
+.text-autumn-dark { color: var(--autumn-dark); }
+.text-autumn-light { color: var(--autumn-light); }
+
+.border-autumn { border-color: var(--autumn); }
+
+body {
+  @apply bg-autumn-light text-autumn-dark;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+a {
+  @apply transition;
+}
+
